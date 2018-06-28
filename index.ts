@@ -1,8 +1,9 @@
 let a: number = 12;
 let b: number = 17;
  
-function showProduct(first: number, second: number): void {
+export const showProduct = (first: number, second: number): void  => {
     console.log("The product is: " +  first * second);
+    return first * second
 }
- 
-showProduct(a, b);
+
+module.exports = {showProduct}
